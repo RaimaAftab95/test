@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'mluvka';
+  src: url('/fonts/mluvka/regular.otf');
+  src: url('/fonts/mluvka/regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nohemi';
+  src: url('/fonts/nohemi/regular.otf');
+  src:
+    url('/fonts/nohemi/regular.otf') format('opentype'),
+    url('/fonts/nohemi/regular.woff') format('woff'),
+    url('/fonts/nohemi/regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .top-30\/30 {
+    top: 100%;
+  }
+
+  .top-29\/30 {
+    top: 96.6667%;
+  }
+
+  .top-28\/30 {
+    top: 93.3333%;
+  }
+
+  .top-27\/30 {
+    top: 90%;
+  }
+
+  .top-26\/30 {
+    top: 86.6667%;
+  }
+
+  .top-25\/30 {
+    top: 83.3333%;
+  }
+
+  .top-24\/30 {
+    top: 80%;
+  }
+
+  .top-23\/30 {
+    top: 76.6667%;
+  }
+
+  .top-22\/30 {
+    top: 73.3333%;
+  }
+
+  .top-21\/30 {
+    top: 70%;
+  }
+
+  .top-20\/30 {
+    top: 66.6667%;
+  }
+
+  .top-19\/30 {
+    top: 63.3333%;
+  }
+
+  .top-18\/30 {
+    top: 60%;
+  }
+
+  .top-17\/30 {
+    top: 56.6667%;
+  }
+
+  .top-16\/30 {
+    top: 53.3333%;
+  }
+
+  .top-15\/30 {
+    top: 50%;
+  }
+
+  .top-14\/30 {
+    top: 46.6667%;
+  }
+
+  .top-13\/30 {
+    top: 43.3333%;
+  }
+
+  .top-12\/30 {
+    top: 40%;
+  }
+
+  .top-11\/30 {
+    top: 36.6667%;
+  }
+
+  .top-10\/30 {
+    top: 33.3333%;
+  }
+
+  .top-9\/30 {
+    top: 30%;
+  }
+
+  .top-8\/30 {
+    top: 26.6667%;
+  }
+
+  .top-7\/30 {
+    top: 23.3333%;
+  }
+
+  .top-6\/30 {
+    top: 20%;
+  }
+
+  .top-5\/30 {
+    top: 16.6667%;
+  }
+
+  .top-4\/30 {
+    top: 13.3333%;
+  }
+
+  .top-3\/30 {
+    top: 10%;
+  }
+
+  .top-2\/30 {
+    top: 6.6667%;
+  }
+
+  .top-1\/30 {
+    top: 3.3333%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+}
+
+/* Custom Swiper Styles */
+.swiper-pagination-bullet {
+  background-color: #00b0ff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1e3a8a !important;
+}
+
+/* Style for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  background-color: #1d1f1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+
+
+@keyframes gradient-animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hover\:gradient-animate:hover {
+  background: linear-gradient(270deg, #00b4d8, hsl(308, 100%, 50%), #00b4d8);
+  background-size: 400% 400%;
+  animation: gradient-animate 3s ease infinite;
+}
